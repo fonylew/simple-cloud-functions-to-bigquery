@@ -45,7 +45,7 @@ jobs:
           # Description for the Cloud Function.
           description: test-description
           # Project to deploy the function in.
-          project_id: root-sanctuary-276107
+          project_id: ${{ secrets.GCP_PROJ_NAME }}
           # Region to deploy the function in. Defaults to us-central1, if not specified.
           region: us-central1
           # Name of a function (as defined in source code) that will be executed. Defaults to the resource name suffix, if not specified. 

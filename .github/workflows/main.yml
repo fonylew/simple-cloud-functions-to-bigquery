@@ -60,3 +60,5 @@ jobs:
           # Runtime to use for the function.
           runtime: python38
           env_vars_file: .github/workflows/env.yaml
+          event_trigger_type: providers/cloud.pubsub/eventTypes/topic.publish
+          event_trigger_resource: projects/${{ secrets.GCP_PROJ_NAME }}/topics/trigger-github-actions-deploy-gf

@@ -41,6 +41,7 @@ jobs:
       - name: Setup GCloud
         uses: google-github-actions/setup-gcloud@master
         with:
+          service_account_email:  github-actions-deploy-cloud-fu@root-sanctuary-276107.iam.gserviceaccount.com
           project_id: ${{ secrets.GCP_PROJ_NAME }}
           service_account_key: ${{ secrets.GCP_CREDENTIALS }}
           export_default_credentials: true

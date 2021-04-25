@@ -50,7 +50,7 @@ jobs:
         uses: google-github-actions/deploy-cloud-functions@main
         with:
           # Name of the Cloud Function.
-          name: hello-world
+          name: insert_data
           # Description for the Cloud Function.
           description: test-description
           # Region to deploy the function in. Defaults to us-central1, if not specified.

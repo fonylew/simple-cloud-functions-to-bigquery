@@ -28,8 +28,7 @@ jobs:
       - name: Setup GCloud
         uses: google-github-actions/setup-gcloud@master
         with:
-          service_account_key: 1234
-          # ${{ secrets.GCP_CREDENTIALS }}
+          service_account_key: ${{ secrets.GCP_CREDENTIALS }}
           export_default_credentials: true
     
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it

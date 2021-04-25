@@ -43,7 +43,7 @@ jobs:
           # Optional service account key to use for authentication to GCP. This should be the JSON
           # formatted private key which can be exported from the Cloud Console. The
           # value can be raw or base64-encoded.
-          credentials: ${{ secrets.gcp_credentials }}
+          credentials: ${{ secrets.GCP_CREDENTIALS }}
           # Name of the Cloud Function.
           name: hello world
           # Description for the Cloud Function.

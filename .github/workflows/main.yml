@@ -45,9 +45,9 @@ jobs:
           # value can be raw or base64-encoded.
           credentials: ${{ secrets.GCP_CREDENTIALS }}
           # Name of the Cloud Function.
-          name: hello world
+          name: hello-world
           # Description for the Cloud Function.
-          description: test description
+          description: test-description
           # Project to deploy the function in.
           project_id: root-sanctuary-276107
           # Region to deploy the function in. Defaults to us-central1, if not specified.

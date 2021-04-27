@@ -47,10 +47,6 @@ jobs:
           description: test-description
           # Region to deploy the function in. Defaults to us-central1, if not specified.
           region: us-central1
-          
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Deployment is completed.
           # Name of a function (as defined in source code) that will be executed. Defaults to the resource name suffix, if not specified. 
           entry_point: insert_data
           # Runtime to use for the function.
@@ -58,3 +54,7 @@ jobs:
           env_vars_file: .github/env/env.yaml
           event_trigger_type: providers/cloud.pubsub/eventTypes/topic.publish
           event_trigger_resource: projects/${{ secrets.GCP_PROJ_NAME }}/topics/trigger-github-actions-deploy-gf
+          
+      # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: echo Deployment is completed.

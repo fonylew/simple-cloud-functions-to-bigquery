@@ -17,9 +17,6 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    
-    # Environment
-    environment: test-deployment
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -37,7 +34,7 @@ jobs:
           service_account_key: ${{ secrets.GCP_CREDENTIALS }}
           export_default_credentials: true
       
-      - name: Cloud Functions Deploy
+      - name: Deploy Cloud Functions
         uses: google-github-actions/deploy-cloud-functions@main
         with:
           # Name of the Cloud Function.

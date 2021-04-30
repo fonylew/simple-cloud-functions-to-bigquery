@@ -1,7 +1,7 @@
 # simple-cloud-functions-to-bigquery
 Cloud Functions streaming insert to BigQuery (with Cloud Pub/Sub trigger). In this example, the function will make a REST API call to get a data and insert to BigQuery.
 
-# Steps
+# Steps to run
 1. Create BigQuery table with a proper schema (using Google Cloud Console).
 2. Create a Pub/Sub topic. When deploy Cloud Functions via Console (web UI), there is a button to create a topic.
 3. Deploy Cloud Function. (alternatively: use `make deploy` as a prompt deploy command)

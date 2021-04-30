@@ -27,11 +27,10 @@ Please follow these steps to setup the workflow:
 1. In GCP IAM, Create new service account with Cloud Functions Admin permission
 2. Generate new key. Download secret key as JSON.
 3. In GCP IAM, add @.iam.gserviceaccount.com with role Service Account User as a member on the root service account <Project_name>@appspot.gserviceaccount.com
-4. (Optional - we can skip this step by creating step 5 and 6 as repo secrets) In GitHub Repo Settings, add new environment named test-deployment (or update test-deployment in .github/workflows/main.yml to the new environment name)
-5. Create new secret GCP_PROJ_NAME with value = project ID e.g. root-sanctuary-01234
-6. Create new secret GCP_CREDENTIALS with value = base64-encoded JSON value from the content of the file in 2.
-7. Create cloud pubsub topic 
-8. Test run this workflow. It should create new Cloud Function in the project.
+4. Create new secret GCP_PROJ_NAME with value = project ID e.g. root-sanctuary-01234
+5. Create new secret GCP_CREDENTIALS with value = base64-encoded JSON value from the content of the file in 2.
+6. Create cloud pubsub topic 
+7. Test run this workflow. It should create new Cloud Function in the project.
 
 # Reference
 - Google Cloud Functions example: https://github.com/GoogleCloudPlatform/python-docs-samples/blob/master/functions/helloworld/main.py

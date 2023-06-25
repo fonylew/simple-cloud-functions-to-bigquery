@@ -34,3 +34,7 @@ Please follow these steps to setup the workflow:
 
 # Reference
 - Google Cloud Functions example: https://github.com/GoogleCloudPlatform/python-docs-samples/blob/master/functions/helloworld/main.py
+
+# Test Github Action
+- Update the text below and push to main branch to test Github Action
+- this line is to test github action 

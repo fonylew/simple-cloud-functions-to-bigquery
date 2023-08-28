@@ -28,14 +28,14 @@ jobs:
         run: echo Ready for deployment
           
       - name: Setup GCloud
-        uses: google-github-actions/setup-gcloud@main
+        uses: google-github-actions/auth@v1
         with:
           project_id: ${{ secrets.GCP_PROJ_NAME }}
-          service_account_key: ${{ secrets.GCP_CREDENTIALS }}
-          export_default_credentials: true
+          credentials_json: ${{ secrets.GCP_CREDENTIALS }}
+          export_environment_variables: true
       
       - name: Deploy Cloud Functions
-        uses: google-github-actions/deploy-cloud-functions@main
+        uses: google-github-actions/deploy-cloud-functions@v1
         with:
           # Name of the Cloud Function.
           name: insert_data
